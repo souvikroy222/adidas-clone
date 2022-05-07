@@ -1,0 +1,29 @@
+.footer {
+    display: grid;  
+    grid-template-columns: repeat(5,1fr);
+    max-width: 65%;
+    justify-content: center;
+    
+    margin: auto;
+    padding: 2.4rem 0;
+    grid-row-gap: 2.3rem;
+    
+  }
+  
+  .first_section p{  
+    font-size: .8rem;
+    font-weight: 200;
+  }
+  
+  .copyright{
+    margin-top: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 1.2rem 1rem ;
+    font-size: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }

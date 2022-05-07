@@ -1,0 +1,12 @@
+*{
+    font-family: 'Sora', sans-serif;
+  }
+  .popular{
+    margin-top: 50px;
+  }
+  .products{  
+    padding-top: 155px;
+    max-width: 85%;
+    margin: auto;
+    padding-bottom: 155px;
+  }

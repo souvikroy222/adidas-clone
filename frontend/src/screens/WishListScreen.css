@@ -1,0 +1,111 @@
+.products_grids{
+    display: grid;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 140px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    width: 260px;
+    position: relative;
+    margin: 20px;
+  }
+  .product_price:hover {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    padding: 1px 3px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s;
+  }
+  .product:hover {
+    outline: 1px solid black;
+  }
+  
+  .product_image img {
+    width: 100%;
+  }
+  .product_name {
+    margin-left: 15px;
+    padding-bottom: 15px;
+  }
+  .product_rating{
+    margin-left: 15px;
+    margin-top: -15px;
+    padding-bottom: 25px;
+  
+  }
+  
+  .product_brand {
+    margin-left: 15px;
+  }
+  
+  .product_price {
+    position: absolute;
+    transition: all 0.3s;
+    top: 200px;
+    left: 20px;
+  
+    padding: 1px 3px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  h3,
+  h4,
+  h5 {
+    font-weight: 400;
+  }
+  
+  h5 {
+    color: grey;
+    margin-top: -10px;
+  }
+  
+  .wishlistbtns{
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+   
+  }
+  .movetoCartBtn{
+    padding: 20px 30px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .removetoWishListBtn{    
+    padding: 20px 20px;
+    background-color: rgb(223, 223, 223);
+    color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .movetoCartBtn:hover{
+    padding: 20px 30px;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .removetoWishListBtn:hover{    
+    padding: 20px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;    
+    justify-content: center;
+    cursor: pointer;
+  }
+

@@ -1,0 +1,72 @@
+.product_details_sec {
+  flex-basis: 70%;
+  margin: 50px;
+  padding-bottom: 50px;
+}
+
+.cart_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.pricing_section {
+    padding-right: 50px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.main_price,.delivery_charge,.total_price{
+    display: flex;     
+    align-items: center;
+}
+
+.main_price h4,.delivery_charge h4,.total_price h4{
+    padding-right: 80px;
+    
+}
+.main_price p,.delivery_charge p,.total_price p{
+   font-weight: 700;
+   font-size: 20px;
+    
+}
+
+.product_cart {
+  padding-top: 150px;
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+}
+
+.item_img_section img {
+  width: 170px;
+}
+
+.item_trash_icon {
+  font-size: 20px;
+}
+.small {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(255, 0, 0);
+}
+.heading{
+    font-size: 25px;
+}
+
+.item_trash_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  height: 50px;
+  background-color: rgb(231, 231, 231);
+}
+
+.place_order_btn{
+    padding: 10px 60px;
+    background-color: black;
+    color: white;
+}

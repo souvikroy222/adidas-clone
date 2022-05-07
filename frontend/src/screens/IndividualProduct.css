@@ -1,0 +1,29 @@
+.product_details{
+    padding-top: 150px;
+}
+.product_details{
+    max-width: 80%;
+    margin: auto;
+}
+
+.product_img_area{
+    display: grid;
+    grid-gap: 1.8rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.add_to_wishlist{
+    margin-top: 25px;
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+.add_to_cart{
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    outline: none;
+}

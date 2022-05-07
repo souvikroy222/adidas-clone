@@ -1,0 +1,23 @@
+
+.popular{
+  margin-top: 50px;
+}
+.products{  
+  padding-top: 155px;
+  max-width: 85%;
+  margin: auto;
+  padding-bottom: 155px;
+}
+
+a {
+  color: rgb(121, 121, 121);
+  text-decoration: none;
+  
+}
+a:hover {
+   color: rgb(0, 0, 0)
+}
+h1,h2{
+  font-family: 'Krona One', sans-serif;
+}
+

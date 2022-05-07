@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;700&family=Lobster&family=Open+Sans:wght@300&family=Sora:wght@300;500&display=swap");
+body {
+  font-family: "Sora", sans-serif;
+}
+
+.header_section {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: #f9f9f9;
+}
+
+.header_section_two {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  padding: 1.4rem 1.2rem;
+  align-items: center;
+}
+.featured_section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  background-color: black;
+}
+.first_sec,
+.second_sec,
+.third_sec {
+  color: #ffff;
+  margin-left: 4.2rem;
+  font-size: 0.8rem;
+}
+
+.logo {
+  flex: 1;
+}
+.logo img {
+  width: 4.2rem;
+}
+
+
+.menus ul {
+  display: flex;
+}
+.searchbar {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 8px;
+  z-index: 1;
+}
+
+.product_searchbar_icon img {
+  vertical-align: middle;
+  position: absolute;
+  right: -5px;
+  padding: 5px;
+  top: 0;
+}
+.searchbar input[type="text"]:focus {
+  outline: none;
+}
+.menus ul li {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 40px;
+  display: flex;
+  font-size: 14px;
+  padding-right: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.17rem;
+}
+.menus ul li:hover {
+  text-decoration: underline;
+}
+
+.user:hover .dropdown-content {
+  display: block;
+}
+.user,
+.wishlist,
+.cart {
+  padding-left: 1.4rem;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.rounded {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 59px;
+  bottom: 56px;
+  border-radius: 100%;
+  
+  background-color: black;
+  color: white;
+}
+

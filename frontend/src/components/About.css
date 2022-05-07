@@ -1,0 +1,22 @@
+.about_section {
+    max-width: 100%;
+    padding: 3.5rem 10rem ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dfdfdf;
+  }
+  
+  .paragraphy{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4.2rem;
+  }
+  
+  ._paragraph, .second_para{
+    margin-top: 1.2rem; 
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  

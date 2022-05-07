@@ -1,0 +1,38 @@
+.order_main{
+    padding-top: 150px;
+    
+    
+}
+.order_submain{
+    border: 1px solid grey;
+    background-color: white;
+    
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.products_main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.order_details{
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+}
+.order_img img{
+    width: 15%;
+    display: flex;
+    
+}
+
+.order_pricing{
+    justify-self: flex-end;
+}
+

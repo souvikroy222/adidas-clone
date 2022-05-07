@@ -1,0 +1,28 @@
+.whats_hot_section {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .heading_whats_hot {
+    display: flex;
+    justify-content: center;
+  }
+  .whats_hot_image_section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.2rem;
+  }
+  
+  .image img{
+    width: 100%;
+  } 
+  .image video{
+    width: 100%;
+  } 
+  .paragraph p{
+    font-size: .8rem;
+    line-height: 1.4rem;
+  }
+  

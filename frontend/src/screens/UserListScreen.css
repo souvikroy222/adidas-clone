@@ -1,0 +1,26 @@
+td {
+    text-align: center;
+  }
+  th, td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {background-color: rgb(232, 232, 232);}
+  th {
+    background-color: #fbff06;
+    color: rgb(0, 0, 0);
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .admin_btns{
+      background-color: red;
+      padding: 10px;
+      border: none;
+      color: white;
+      margin-right: 10px;
+      border-radius: 10px;
+
+  }
