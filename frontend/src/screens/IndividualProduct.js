@@ -16,12 +16,13 @@ const IndividualProduct = () => {
   
 const navigate=useNavigate()
   const dispatch = useDispatch();
+  const { id } = useParams();
   const product = useSelector((state) => state.productDetails.product);
   useEffect(() => {
     dispatch(getSingleProduct(id));
   }, [dispatch]);
 
-  const { id } = useParams();
+  
   const wishlistHandle=()=>{
     dispatch(addToWishList(id))
     navigate('/wishlist')
