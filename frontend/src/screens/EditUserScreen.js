@@ -36,7 +36,7 @@ const EditUserScreen = () => {
       },
     };
     const { data } = await axios.get(
-      `http://localhost:5000/api/users/${id}`,
+      `/api/users/${id}`,
       config
     );
     setName(data.name);

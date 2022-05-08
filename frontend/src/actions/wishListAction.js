@@ -4,7 +4,7 @@ import {
 } from "../constants/wishlistCons";
 import axios from "axios";
 export const addToWishList = (id) => async (dispatch, getState) => {
-  const { data } = await axios.get(`http://localhost:5000/api/products/${id}`);
+  const { data } = await axios.get(`/api/products/${id}`);
   dispatch({ type: ADD_TO_WISHLIST, payload: { ...data } });
   localStorage.setItem(
     "wishListitems",

@@ -32,7 +32,7 @@ const EditProductScreen = () => {
       },
     };
     const { data } = await axios.get(
-      `http://localhost:5000/api/products/${id}`,
+      `/api/products/${id}`,
       config
     );
     setName(data.name);

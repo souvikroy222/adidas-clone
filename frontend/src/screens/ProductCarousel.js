@@ -31,7 +31,7 @@ const ProductCarousel = () => {
   }, [dispatch]);
 
   const handleChange=(id)=>{
-    window.open(`/products/${id}`);
+    window.open(`/api/products/${id}`);
   }
 
  

@@ -43,7 +43,7 @@ export const editIndividualuser =
         isAdmin,
       };
       const { data } = await axios.put(
-        `http://localhost:5000/api/users/${userid}`,
+        `/api/users/${userid}`,
         datas,
         config
       );
@@ -67,7 +67,7 @@ export const getIndividualDetailsuser =
         },
       };
       const { data } = await axios.get(
-        `http://localhost:5000/api/users/${userid}`,
+        `/api/users/${userid}`,
         config
       );
 
@@ -89,7 +89,7 @@ export const deleteIndividualuser = (userid) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.delete(
-      `http://localhost:5000/api/users/${userid}`,
+      `/api/users/${userid}`,
       config
     );
     dispatch({ type: DELETE_USER_SUCCESS, payload: data });
@@ -109,7 +109,7 @@ export const listAllusers = () => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfos.token}`,
       },
     };
-    const { data } = await axios.get(`http://localhost:5000/api/users`, config);
+    const { data } = await axios.get(`/api/users`, config);
     dispatch({ type: FETCH_USER_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: FETCH_USER_LIST_FAIL, payload: error.message });
@@ -125,7 +125,7 @@ export const loginUserAction = (email, password) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
     };
     const { data } = await axios.post(
-      "http://localhost:5000/api/users/login",
+      "/api/users/login",
       { email, password },
       config
     );
@@ -147,7 +147,7 @@ export const registerUserAction =
         headers: { "Content-Type": "application/json" },
       };
       const { data } = await axios.post(
-        "http://localhost:5000/api/users",
+        "/api/users",
         { name, email, password },
         config
       );

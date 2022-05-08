@@ -42,7 +42,7 @@ export const updateDeliveredOrdersbyAdmin =
         },
       };
       const { data } = await axios.put(
-        `http://localhost:5000/api/orders/allorders/${id}`,
+        `/api/orders/allorders/${id}`,
         result,
         config
       );
@@ -67,7 +67,7 @@ export const fetchAllOrdersbyAdmin = () => async (dispatch, getState) => {
     };
     
     const { data } = await axios.get(
-      `http://localhost:5000/api/orders/customerorders`,
+      `/api/orders/customerorders`,
       config
     );
     dispatch({ type: ADMIN_ORDER_DETAILS_SUCCESS, payload: data });
@@ -88,7 +88,7 @@ export const fetchAllOrders = () => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      `http://localhost:5000/api/orders/`,
+      `/api/orders/`,
       config
     );
     dispatch({ type: ALL_ORDER_DETAILS_SUCCESS, payload: data });
@@ -112,7 +112,7 @@ export const payOrder =
         },
       };
       const { data } = await axios.put(
-        `http://localhost:5000/api/orders/${orderId}/pay`,
+        `/api/orders/${orderId}/pay`,
         paymentResult,
         config
       );
@@ -134,7 +134,7 @@ export const fetchOrderDetails = (id) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      `http://localhost:5000/api/orders/${id}`,
+      `/api/orders/${id}`,
       config
     );
     dispatch({ type: ORDER_DETAILS_SUCCESS, payload: data });
@@ -160,7 +160,7 @@ export const placeOrder = (orderData) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.post(
-      "http://localhost:5000/api/orders",
+      "/api/orders",
       orderData,
       config
     );

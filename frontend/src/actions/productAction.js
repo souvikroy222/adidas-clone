@@ -29,7 +29,7 @@ export const searchProducts = (name) => async (dispatch, getState) => {
     dispatch({ type: SEARCH_PRODUCT_REQUEST });
    
     const { data } = await axios.get(
-      `http://localhost:5000/api/products/search?name=${name}`,      
+      `/api/products/search?name=${name}`,      
     );
     dispatch({ type: SEARCH_PRODUCT_SUCCESS, payload: data });
   } catch (error) {
@@ -42,7 +42,7 @@ export const filterOrders = (categories) => async (dispatch, getState) => {
     dispatch({ type: FILTER_PRODUCT_REQUEST });
    
     const { data } = await axios.get(
-      `http://localhost:5000/api/products/filter?categories=${categories}`,      
+      `/api/products/filter?categories=${categories}`,      
     );
     dispatch({ type: FILTER_PRODUCT_SUCCESS, payload: data });
   } catch (error) {
@@ -65,7 +65,7 @@ export const updateIndividualProduct =
       };
       
       const { data } = await axios.put(
-        `http://localhost:5000/api/products/${productid}`,
+        `/api/products/${productid}`,
         productInfo,
         config
       );
@@ -91,7 +91,7 @@ export const createIndividualProduct =
         },
       };
       const { data } = await axios.post(
-        `http://localhost:5000/api/products`,productdata,
+        `/api/products`,productdata,
         config,
       );
       dispatch({ type: CREATE_PRODUCT_SUCCESS, payload: data });
@@ -113,7 +113,7 @@ export const deleteIndividualProduct =
         },
       };
       const { data } = await axios.delete(
-        `http://localhost:5000/api/products/${productid}`,
+        `/api/products/${productid}`,
         config
       );
       dispatch({ type: DELETE_PRODUCT_SUCCESS, payload: data });
@@ -125,7 +125,7 @@ export const deleteIndividualProduct =
 export const getAllProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST });
-    const { data } = await axios.get("http://localhost:5000/api/products");
+    const { data } = await axios.get("/api/products");
     console.log(data);
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
@@ -137,7 +137,7 @@ export const getSingleProduct = (id) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
     const { data } = await axios.get(
-      `http://localhost:5000/api/products/${id}`
+      `/api/products/${id}`
     );
     dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
   } catch (error) {
