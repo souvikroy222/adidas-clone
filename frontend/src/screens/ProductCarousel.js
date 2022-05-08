@@ -32,7 +32,7 @@ const ProductCarousel = () => {
   }, [dispatch]);
 
   const handleChange=(id)=>{
-    navigate(`/products/${id}`);
+    window.open(`/products/${id}`);
   }
 
  
