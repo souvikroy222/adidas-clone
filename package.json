@@ -1,16 +1,15 @@
 {
   "name": "adidas_clone",
-  "version": "1.0.0",
-  "engines":{
-    "node":"16.14.2"
-  },
+  "version": "1.0.0"
+ ,
   "description": "adidas clone app",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server",    
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm insall --prefix frontend && npm run build --prefix frontend"
   },
+  
   "author": "souvik",
   "license": "ISC",
   "dependencies": {
