@@ -19,7 +19,7 @@ const AllProductsScreen = () => {
       {products.map((items) => (
         <div className="product_carousels" key={items._id}>
           <div className="product">
-            <Link to={`/${items._id}`}>              
+            <Link to={`api/products/${items._id}`}>              
               <div className="product_image">
                 <img src={items.image} />
               </div>

@@ -52,7 +52,7 @@ function App() {
           
 
           <Route path="/register" element={<RegisterScreen />} />
-          <Route exact path="/products" element={<AllProductsScreen />} />
+          <Route path="/products" element={<AllProductsScreen />} />
           <Route path="/products/:id" element={<IndividualProduct />} />
           <Route path="/products/categories/:name" element={<FilteredProducts />} />
           <Route path="/products/query=:search" element={<SearchProduct />} />
