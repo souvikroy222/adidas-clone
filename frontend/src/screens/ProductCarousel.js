@@ -39,7 +39,7 @@ const ProductCarousel = () => {
   return (
     <div>
       <Slider {...settings}>
-        {products.map((items) => (
+        {products && products.map((items) => (
           <div className="product_carousels" key={items._id}>
             <div className="product"> 
             
