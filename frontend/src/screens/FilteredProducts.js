@@ -20,7 +20,7 @@ const {success}=useSelector((state) => state.filteredProductDetails)
   console.log(products);
 
   const handleChange=(id)=>{
-    window.open(`http://localhost:3000/products/${id}`);
+    window.open(`/products/${id}`);
   }
 
   return (
