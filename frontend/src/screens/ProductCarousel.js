@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from "../actions/productAction";
 import "./ProductCarousel.css";
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import RatingStar from "../components/RatingStar";
 
 
@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const ProductCarousel = () => {
+  const navigate=useNavigate()
 
   
   const settings = {
@@ -31,7 +32,7 @@ const ProductCarousel = () => {
   }, [dispatch]);
 
   const handleChange=(id)=>{
-    window.open(`/api/products/${id}`);
+    navigate(`/api/products/${id}`);
   }
 
  
