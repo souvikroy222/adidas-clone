@@ -31,7 +31,7 @@ const ProductCarousel = () => {
   }, [dispatch]);
 
   const handleChange=(id)=>{
-    window.open(`http://localhost:3000/products/${id}`);
+    window.open(`/products/${id}`);
   }
 
  
