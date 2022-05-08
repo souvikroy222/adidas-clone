@@ -31,7 +31,7 @@ cloudinary.config({
 
 
 //cross origin
-/*const whitelist = ["http://localhost:5000"];
+const whitelist = [process.env.PORT];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {
@@ -42,7 +42,7 @@ const corsOptions = {
   },
   credentials: true,
 };
-app.use(cors(corsOptions));*/
+app.use(cors(corsOptions));
 const PORT = process.env.PORT || 5000;
 
 
