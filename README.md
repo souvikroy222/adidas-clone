@@ -2,4 +2,4 @@
 
 
 
-![Free_MacBook_Pro_1](https://user-images.githubusercontent.com/69359546/167638750-80cb4c5e-dfb0-461b-8579-17a417d22d2f.png)
+![Free_MacBook_Pro_1](https://user-images.githubusercontent.com/69359546/167639141-9d258bd1-cdfe-41fd-845b-c04009e04f21.png)
