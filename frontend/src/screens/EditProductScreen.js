@@ -22,13 +22,13 @@ const EditProductScreen = () => {
   const dispatch = useDispatch();
 
   const {
-    userLogin: { userInfo },
+    userLogin: { userInfos },
   } = useSelector((state) => state);
 
   const fetchProduct = async () => {
     const config = {
       headers: {
-        Authorization: `Bearer ${userInfo.token}`,
+        Authorization: `Bearer ${userInfos.token}`,
       },
     };
     const { data } = await axios.get(
